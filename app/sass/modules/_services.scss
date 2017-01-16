@@ -1,0 +1,113 @@
+.services {
+  background: url(../img/about-us-bg.png) no-repeat -20px -5px;
+
+  .bg-block {
+    background: url(../img/geometri.png) -235px 100% no-repeat;
+  }
+
+  .wrap {
+    max-width: 890px;
+    padding: 80px 15px 75px;
+    margin: 0 auto;
+
+    .item {
+      display: block;
+      max-width: 510px;
+      position: relative;
+      padding: 20px 20px 20px 140px;
+      margin-bottom: 15px;
+      transition: all ease-in 0.25s;
+
+      &:hover {
+        box-shadow: 0 6px 30px 10px rgba(0, 0, 0, .23);
+        text-decoration: none;
+      }
+
+      @media (max-width: 400px) {
+        padding: 10px 10px 10px 105px;
+      }
+
+      .img-block {
+        position: absolute;
+        left: 20px;
+        padding-right: 20px;
+        border-right: 2px solid #efefef;
+
+        @media (max-width: 400px) {
+          left: 7px;
+          padding-right: 7px;
+        }
+      }
+
+      .item-title {
+        color: #404040;
+        @include fontSize(20px);
+        font-weight: 700;
+        line-height: 24px;
+        padding-bottom: 10px;
+      }
+
+      p {
+        color: #757575;
+        @include fontSize(13px);
+        font-weight: 400;
+        line-height: 18px;
+      }
+
+      &:nth-child(2n) {
+        margin: 0 auto 10px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+.services-vnutr {
+  background: url(../img/about-us-bg.png) no-repeat -20px -10px;
+
+  .bg-block {
+    background: url(../img/bg-service-vnutr.jpg) no-repeat 103% 0;
+  }
+
+  .wrap {
+    max-width: 1200px;
+    padding-top: 80px;
+    padding-bottom: 75px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+
+    .item {
+      padding: 0 15px;
+
+      .title {
+        color: #404040;
+        @include fontSize(30px);
+        font-weight: 700;
+        padding-bottom: 25px;
+      }
+
+      p {
+        color: #404040;
+        @include fontSize(14px);
+        line-height: 23px;
+        padding-bottom: 20px;
+        max-width: 800px;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+
+      &.img {
+        @media (max-width: 768px) {
+          text-align: center;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}

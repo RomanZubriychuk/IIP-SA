@@ -1,0 +1,135 @@
+.about-us {
+  background: url(../img/about-us-bg.png) no-repeat 0 0;
+
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 110px;
+
+    @media (max-width: 1100px) {
+      padding-top: 50px;
+      padding-bottom: 70px;
+    }
+
+    .about-title {
+      color: #2a5298;
+      @include fontSize(30px);
+      font-weight: 700;
+      padding: 0 15px 25px;
+      text-transform: uppercase;
+      line-height: 30px;
+    }
+  }
+
+  .wrap-item {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 991px) {
+      display: block;
+    }
+
+    .item {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 33.33%;
+
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+
+      p {
+        color: #404040;
+        @include fontSize(14px);
+        line-height: 23px;
+        padding-bottom: 20px;
+
+        b {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.our-structure {
+  background: #f9f9f9 url(../img/about-bg-2.png) no-repeat 0 0;
+
+  .wrap {
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 80px 15px 40px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      color: #757575;
+      @include fontSize(14px);
+      font-weight: 400;
+      line-height: 24px;
+      display: block;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 60px;
+    }
+  }
+}
+
+.principles {
+  .wrap {
+    max-width: 1200px;
+    padding: 70px 15px 90px;
+    margin: 0 auto;
+
+    > .title {
+      color: #2a5298;
+      @include fontSize(30px);
+      font-weight: 700;
+      line-height: 30px;
+      padding-bottom: 50px;
+      text-transform: uppercase;
+    }
+
+    .item {
+      position: relative;
+      padding-left: 200px;
+
+      @media (max-width: 768px) {
+        padding-left: 60px;
+      }
+
+      span {
+        position: absolute;
+        top: 0;
+        left: 90px;
+        opacity: 0.5;
+        color: #757575;
+        @include fontSize(72px);
+        font-weight: 100;
+
+        @media (max-width: 768px) {
+          left: 0;
+        }
+      }
+
+      .title {
+        @include fontSize(24px);
+        font-weight: 600;
+        line-height: 24px;
+        padding-bottom: 15px;
+      }
+
+      p {
+        @include fontSize(16px);
+        font-weight: 400;
+        line-height: 23px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
